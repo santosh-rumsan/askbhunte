@@ -1,0 +1,15 @@
+{
+  "name": "askbhunte",
+  "version": "0.0.1",
+  "description": "Ask Bhunte - SDK",
+  "author": "Rumsan Tech <team@rumsan.com>",
+  "source": "./src/index.js",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "devDependencies": {
+    "microbundle": "^0.11.0"
+  }
+}
