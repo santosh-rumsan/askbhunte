@@ -11,5 +11,8 @@
   },
   "devDependencies": {
     "microbundle": "^0.11.0"
+  },
+  "dependencies": {
+    "rumsan-core": "^1.0.1"
   }
 }

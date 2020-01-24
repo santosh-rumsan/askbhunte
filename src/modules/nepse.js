@@ -1,4 +1,4 @@
-export default {
+const schema = {
   symbol: {
     type: String,
     unique: true,
@@ -23,3 +23,11 @@ export default {
   minimum: Number,
   previous_close: Number
 };
+
+class Nepse {
+  constructor() {
+    this.schema = schema;
+  }
+}
+
+export default new Nepse();

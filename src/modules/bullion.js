@@ -1,10 +1,5 @@
-export default {
+const schema = {
   symbol: {
-    type: String,
-    unique: true,
-    required: true
-  },
-  name: {
     type: String,
     required: true
   },
@@ -17,3 +12,13 @@ export default {
     required: true
   }
 };
+
+class Commodity {
+  constructor() {
+    this.schema = schema;
+  }
+
+  add(payload) {}
+}
+
+export default new Commodity();
