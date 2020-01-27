@@ -12,11 +12,10 @@ const schema = {
 };
 
 class Vegetable {
-  constructor() {
+  constructor(cfg) {
+    Object.assign(this, cfg);
     this.schema = schema;
   }
-
-  add(payload) {}
 }
 
 export default new Vegetable();

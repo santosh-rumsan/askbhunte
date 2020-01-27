@@ -1,9 +1,21 @@
-import Bullion from "./modules/bullion";
-import Nepse from "./modules/nepse";
-import Vegetable from "./modules/vegetable";
+import bullion from "./modules/bullion";
+import nepse from "./modules/nepse";
+import vegetable from "./modules/vegetable";
 
-export default {
-  Bullion,
-  Nepse,
-  Vegetable
-};
+import ApiService from "./utils/apiService";
+
+class Client {
+  constructor(config) {
+    this.test = "test";
+    const service = new ApiService({
+      url: config.endpoint
+    });
+    let cfg = { service };
+
+    this.Bullion = new bullion(cfg);
+    //this.Nepse = new nepse(cfg);
+    // this.Vegetable = new vegetable(cfg);
+  }
+}
+
+export default Client;

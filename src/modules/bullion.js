@@ -13,12 +13,16 @@ const schema = {
   }
 };
 
-class Commodity {
-  constructor() {
+class Bullion {
+  constructor(cfg) {
+    Object.assign(this, cfg);
     this.schema = schema;
   }
 
-  add(payload) {}
+  async get(symbol) {
+    let data = await this.service.get("/bullion/current");
+    console.log(data);
+  }
 }
 
-export default new Commodity();
+export default Bullion;

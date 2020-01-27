@@ -25,7 +25,8 @@ const schema = {
 };
 
 class Nepse {
-  constructor() {
+  constructor(cfg) {
+    Object.assign(this, cfg);
     this.schema = schema;
   }
 }
