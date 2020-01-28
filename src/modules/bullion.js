@@ -20,8 +20,8 @@ class Bullion {
   }
 
   async get(symbol) {
-    let data = await this.service.get("/bullion/current");
-    console.log(data);
+    if (!symbol) return this.service.get("/bullion/current");
+    else return this.service.get("/bullion/" + symbol);
   }
 }
 

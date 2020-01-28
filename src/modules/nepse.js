@@ -31,4 +31,4 @@ class Nepse {
   }
 }
 
-export default new Nepse();
+export default Nepse;

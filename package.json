@@ -1,6 +1,6 @@
 {
   "name": "askbhunte",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Ask Bhunte - SDK",
   "author": "Rumsan Tech <team@rumsan.com>",
   "source": "./src/index.js",

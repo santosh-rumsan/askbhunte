@@ -3,7 +3,8 @@ const fetch = require("node-fetch");
 
 class APIService {
   constructor(cfg) {
-    Object.assign(this, cfg);
+    let config = Object.assign({}, cfg);
+    Object.assign(this, config);
     this.debugMode = this.debugMode || false;
   }
 

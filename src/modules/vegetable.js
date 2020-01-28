@@ -18,4 +18,4 @@ class Vegetable {
   }
 }
 
-export default new Vegetable();
+export default Vegetable;

@@ -10,11 +10,12 @@ class Client {
     const service = new ApiService({
       url: config.endpoint
     });
+
     let cfg = { service };
 
     this.Bullion = new bullion(cfg);
-    //this.Nepse = new nepse(cfg);
-    // this.Vegetable = new vegetable(cfg);
+    this.Nepse = new nepse(cfg);
+    this.Vegetable = new vegetable(cfg);
   }
 }
 
