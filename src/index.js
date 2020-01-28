@@ -2,11 +2,11 @@ import bullion from "./modules/bullion";
 import nepse from "./modules/nepse";
 import vegetable from "./modules/vegetable";
 
+import schemas from "./schemas";
 import ApiService from "./utils/apiService";
 
-class Client {
+class client {
   constructor(config) {
-    this.test = "test";
     const service = new ApiService({
       url: config.endpoint
     });
@@ -19,4 +19,6 @@ class Client {
   }
 }
 
-export default Client;
+export const Schemas = schemas;
+
+export const Client = client;
